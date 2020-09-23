@@ -6,6 +6,6 @@ The configuration runs containers for the Kindred Britain php app and a PostgreS
 
 I've tried to touch the orignal repo (at `sul-cidr/kb-v1`), and in particular the code, as little as possible.  The main thing is that the codebase was hardcoded to connect to a database server at `orbis-prod.stanford.edu` which is no longer available, so I've set it to read parameters from the environment and default to connecting to localhost (see https://github.com/sul-cidr/kb-v1/blob/main/conn.php).
 
-To get this up and going, make sure you have docker engine and docker-compose installed, then clone the repo and run `docker compose up -d`.
+To get this up and going, make sure you have docker engine and docker-compose installed, then clone the repo and run `docker-compose up -d`.
 
 Because the source from `sul-cidr/kb-v1` is built into a layer in the docker image, the image needs to be deleted and rebuilt in order to redeploy with updated source from GitHub.
