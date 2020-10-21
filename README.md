@@ -1,6 +1,6 @@
 # kb-docker-config
 
-This repo contains a docker configuration that can be used to deploy the Kindred Britain (v1) project from https://github.com/sul-cidr/kb-v1.  The public site is available at http://kindred.stanford.edu.
+This repo contains a docker configuration that can be used to deploy the Kindred Britain (v1) project from https://github.com/sul-cidr/kb-v1.  The public site is available at https://kindred.stanford.edu.
 
 The configuration runs containers for the Kindred Britain php app and a PostgreSQL server with several custom extensions.  It also runs an NGINX container which is exposed to the docker host on tcp/8080 (with the expectation that this will sit behind a web-server running directly on the host itself).
 
