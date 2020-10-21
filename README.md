@@ -8,4 +8,4 @@ I've tried to touch the orignal repo (at `sul-cidr/kb-v1`), and in particular th
 
 To get this up and going, make sure you have docker engine and docker-compose installed, then clone the repo and run `docker-compose up -d`.
 
-Because the source from `sul-cidr/kb-v1` is built into a layer in the docker image, the image needs to be deleted and rebuilt in order to redeploy with updated source from GitHub.
+Because the source from `sul-cidr/kb-v1` is built into a layer in the docker image, the `kindred_app` image would need to be deleted and rebuilt in order to redeploy with updated source from the `sul-cidr/kb-v1` repo.
